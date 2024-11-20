@@ -1,0 +1,16 @@
+Target está sendo modelado como os possíveis jogos red, black e white
+
+Informações dentro da divId 'roulette'.
+    Seu class é dinâmico entre 3 estados: 'page waiting', 'page rolling', 'page complete'
+    Waiting: Estado onde players apostam
+    Rolling: Servidor computando vencedor
+    Complete: Resultado é informado
+
+Dados dividos entre duas class divs: 'game-controller-container', 'original-games-and-description-container'
+     'game-controller-container' é pai de div class 'roulette-recent' onde resultados são mostrados
+     'original-games-and-description-container' contem os usuarios e quantias separados pelo alvo
+
+Temos uma coluna para cada target (div class): 'roulette-column red', 'roulette-column black', 'roulette-column white'
+    Os montantes apostados em cada target estão em div class 'counter'
+    Os usuários são agrupados em divs 'entry' dentro de uma div 'entries'
+    É possível obter o id dentro de 'entry' a partir de 'user-profile-link'
